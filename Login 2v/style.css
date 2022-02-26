@@ -8,5 +8,108 @@
 }
 
 body {
-    background-image: url(https://i.imgur.com/h7BA8tq.png)
+    background-color: #49445e;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+  
+  /*” Para fazer o card abaixo eu utilizei a teg <background-color: #f8f0ff> para definir a cor
+        mais 70 no final para colocar opacidade.
+      O prossimo ponto que adicionei foi o <padding: 30px> para dá um espaçamento da borda do
+        card para a letra.
+      O seguinte foi o <border-radius: 4%> para arredondar as pontinhas.
+      Por fim <box-shadow: 3px 3px 1px 0px> para por uma sombra, Onde o primeiro <3px> é direita
+         o segundo <3px> é embaixo, esquerda é <1px> e a parte de cima <0px>. Por fim foi adicionado
+         opacidade como foi dito anteriormente“*/
+  
+.card {
+      background-color: #f8f0ff70;
+      padding: 35px;
+      border-radius: 4%;
+      box-shadow: 4px 4px 3px 0px #1b1b1b70
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(249, 247, 255);
+    font-weight: 500;
+}
+
+/*” <border: 0> Tirou as bordas do input
+    <border-bottom: 1px solid #1b1b1b70> Colocou aquelas linhas para serem
+       o lugar que digitamos no input e tirou a cor branca com <background-color: transparent>
+    <outline: none> quando vc seleciona a linha para digitar aparece uma borda o comando tirou ela
+*/
+
+.labe-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #f8f0ff70;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px; 
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.labe-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*” Quando clicamos na linha do input a cor da linha muda
+    Esse <border-bottom: 2px solid #2a282ca8> é basicamente uma trasiçãozinha
+        onde a animação do hover demora uns segundinhos a mais para aconetecer
+*/
+
+.labe-float input:focus{
+    border-bottom: 2px solid #2a282ca8;
+}
+
+.labe-float label{
+    color: rgb(249, 247, 255);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.labe-float input:focus + label {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+button {
+    background-color: #49445ee3;
+    border-color:#f8f0ffb2;
+    color:rgb(249, 247, 255);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: #49445ee3;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
 }
