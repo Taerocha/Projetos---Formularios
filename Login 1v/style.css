@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 100vh;
+    height: 100vh;
+    background: rgb(42, 44, 80);
+    display: flex
+    justify-content: center
+    align-itens: center
+}
+
